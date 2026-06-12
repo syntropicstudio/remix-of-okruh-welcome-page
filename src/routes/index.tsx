@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Star, Coffee, Cake, Wine, GlassWater } from "lucide-react";
 
 import hero from "@/assets/hero.jpg";
-import about from "@/assets/about.jpg";
+import aboutAsset from "@/assets/bistro-zahradka.jpg.asset.json";
+const about = aboutAsset.url;
 import menuSavory from "@/assets/menu-savory.jpg";
 import menuSweet from "@/assets/menu-sweet.jpg";
 import menuDrinks from "@/assets/menu-drinks.jpg";
