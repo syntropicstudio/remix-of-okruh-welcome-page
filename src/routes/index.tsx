@@ -114,7 +114,7 @@ function Home() {
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/50">
         <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
           <a href="#" className="flex items-center gap-2">
-            <img src={smallLogo} alt="Bistro Okruh" className="h-10 w-auto" />
+            <img src={logo} alt="Bistro Okruh" className="h-12 w-12 object-contain" />
           </a>
           <nav className="hidden md:flex items-center gap-10 text-sm tracking-wide">
             {navItems.map((n) => (
