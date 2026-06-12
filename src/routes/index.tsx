@@ -11,7 +11,8 @@ import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
-import logo from "@/assets/logo.png";
+import logoAsset from "@/assets/okruh-logo.png.asset.json";
+const logo = logoAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -108,29 +109,36 @@ function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Nav */}
-      <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/50">
-        <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
-          <a href="#" className="flex items-center gap-2">
-            <img src={logo} alt="Bistro Okruh" className="h-10 w-auto" />
+      <header className="relative z-50 bg-background">
+        <div className="mx-auto max-w-7xl px-6 pt-8 pb-4 flex flex-col items-center">
+          <a href="#" className="flex items-center justify-center">
+            <img
+              src={logo}
+              alt="Bistro Okruh"
+              className="h-40 w-40 md:h-48 md:w-48 object-contain"
+            />
           </a>
-          <nav className="hidden md:flex items-center gap-10 text-sm tracking-wide">
-            {navItems.map((n) => (
-              <a key={n.href} href={n.href} className="text-foreground/80 hover:text-sage transition-colors">
-                {n.label}
-              </a>
-            ))}
-          </nav>
-          <a
-            href="#kontakt"
-            className="hidden md:inline-flex items-center px-5 py-2.5 rounded-full bg-sage text-primary-foreground text-sm hover:opacity-90 transition"
-          >
-            Rezervovat
-          </a>
+          <div className="mt-6 w-full flex items-center justify-between gap-6">
+            <span className="hidden md:block w-[120px]" aria-hidden />
+            <nav className="flex flex-wrap items-center justify-center gap-6 md:gap-10 text-sm tracking-wide">
+              {navItems.map((n) => (
+                <a key={n.href} href={n.href} className="text-foreground/80 hover:text-sage transition-colors">
+                  {n.label}
+                </a>
+              ))}
+            </nav>
+            <a
+              href="#kontakt"
+              className="hidden md:inline-flex items-center px-5 py-2.5 rounded-full bg-sage text-primary-foreground text-sm hover:opacity-90 transition shrink-0"
+            >
+              Rezervovat
+            </a>
+          </div>
         </div>
       </header>
 
       {/* Hero */}
-      <section className="relative pt-32 pb-24 overflow-hidden">
+      <section className="relative pt-8 pb-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-16 items-center">
           <div className="fade-up">
             <p className="text-sm tracking-[0.3em] uppercase text-clay mb-6">Specialty Coffee · Brunch · Wine</p>
