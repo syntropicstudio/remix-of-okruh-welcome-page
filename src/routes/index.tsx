@@ -293,10 +293,10 @@ function Home() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            <img src={gallery1} alt="Barista" width={1024} height={1280} loading="lazy" className="rounded-2xl object-cover w-full h-full aspect-[3/4] row-span-2 md:row-span-2" />
-            <img src={gallery3} alt="Hosté v bistru" width={1280} height={1024} loading="lazy" className="rounded-2xl object-cover w-full aspect-[4/3] col-span-2 md:col-span-2" />
-            <img src={gallery4} alt="Káva na mramoru" width={1024} height={1024} loading="lazy" className="rounded-2xl object-cover w-full aspect-square" />
-            <img src={gallery2} alt="Domácí chléb" width={1024} height={1024} loading="lazy" className="rounded-2xl object-cover w-full aspect-square col-span-2 md:col-span-1" />
+            <img src={gallery1} alt="Vege talíř" width={1024} height={1280} loading="lazy" className="rounded-2xl object-cover w-full h-full aspect-[3/4] row-span-2 md:row-span-2" />
+            <img src={gallery3} alt="Bistro Okruh — pohled na budovu" width={1280} height={1024} loading="lazy" className="rounded-2xl object-cover object-center w-full aspect-[4/3] col-span-2 md:col-span-2" />
+            <img src={gallery4} alt="Domácí polévka" width={1024} height={1024} loading="lazy" className="rounded-2xl object-cover w-full aspect-square" />
+            <img src={gallery2} alt="Otevřený chléb s vejcem" width={1024} height={1024} loading="lazy" className="rounded-2xl object-cover w-full aspect-square col-span-2 md:col-span-1" />
             <img src={menuSweet} alt="Cheesecake" width={1024} height={1024} loading="lazy" className="rounded-2xl object-cover w-full aspect-square hidden md:block" />
             <img src={menuDrinks} alt="Limonáda" width={1024} height={1024} loading="lazy" className="rounded-2xl object-cover w-full aspect-square hidden md:block" />
           </div>
