@@ -8,10 +8,14 @@ import menuSavory from "@/assets/menu-savory.jpg";
 import menuSweet from "@/assets/menu-sweet.jpg";
 import menuDrinks from "@/assets/menu-drinks.jpg";
 import menuWine from "@/assets/menu-wine.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
+import gallery1Asset from "@/assets/vege-talir.jpg.asset.json";
+import gallery2Asset from "@/assets/toast.jpg.asset.json";
+import gallery3Asset from "@/assets/budova.jpg.asset.json";
+import gallery4Asset from "@/assets/polevka.jpg.asset.json";
+const gallery1 = gallery1Asset.url;
+const gallery2 = gallery2Asset.url;
+const gallery3 = gallery3Asset.url;
+const gallery4 = gallery4Asset.url;
 import smallLogo from "@/assets/logo.png";
 import logoAsset from "@/assets/okruh-logo.png.asset.json";
 const logo = logoAsset.url;
@@ -289,10 +293,10 @@ function Home() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            <img src={gallery1} alt="Barista" width={1024} height={1280} loading="lazy" className="rounded-2xl object-cover w-full h-full aspect-[3/4] row-span-2 md:row-span-2" />
-            <img src={gallery3} alt="Hosté v bistru" width={1280} height={1024} loading="lazy" className="rounded-2xl object-cover w-full aspect-[4/3] col-span-2 md:col-span-2" />
-            <img src={gallery4} alt="Káva na mramoru" width={1024} height={1024} loading="lazy" className="rounded-2xl object-cover w-full aspect-square" />
-            <img src={gallery2} alt="Domácí chléb" width={1024} height={1024} loading="lazy" className="rounded-2xl object-cover w-full aspect-square col-span-2 md:col-span-1" />
+            <img src={gallery1} alt="Vege talíř" width={1024} height={1280} loading="lazy" className="rounded-2xl object-cover w-full h-full aspect-[3/4] row-span-2 md:row-span-2" />
+            <img src={gallery3} alt="Bistro Okruh — pohled na budovu" width={1280} height={1024} loading="lazy" className="rounded-2xl object-cover object-center w-full aspect-[4/3] col-span-2 md:col-span-2" />
+            <img src={gallery4} alt="Domácí polévka" width={1024} height={1024} loading="lazy" className="rounded-2xl object-cover w-full aspect-square" />
+            <img src={gallery2} alt="Otevřený chléb s vejcem" width={1024} height={1024} loading="lazy" className="rounded-2xl object-cover w-full aspect-square col-span-2 md:col-span-1" />
             <img src={menuSweet} alt="Cheesecake" width={1024} height={1024} loading="lazy" className="rounded-2xl object-cover w-full aspect-square hidden md:block" />
             <img src={menuDrinks} alt="Limonáda" width={1024} height={1024} loading="lazy" className="rounded-2xl object-cover w-full aspect-square hidden md:block" />
           </div>
