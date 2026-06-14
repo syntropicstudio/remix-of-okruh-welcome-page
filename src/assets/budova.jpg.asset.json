@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "bf114dd3-4dd0-4e6e-8805-daa1c9ae62d2",
-  "project_id": "45a31d77-f433-454c-9c87-3aa8ac6ad8fb",
-  "url": "/__l5e/assets-v1/bf114dd3-4dd0-4e6e-8805-daa1c9ae62d2/budova.jpg",
-  "r2_key": "a/v1/45a31d77-f433-454c-9c87-3aa8ac6ad8fb/bf114dd3-4dd0-4e6e-8805-daa1c9ae62d2/budova.jpg",
-  "original_filename": "budova.jpg",
-  "size": 425907,
   "content_type": "image/jpeg",
-  "created_at": "2026-06-12T19:52:07Z"
+  "created_at": "2026-06-12T19:52:07Z",
+  "original_filename": "budova.jpg",
+  "project_id": "b39350f6-4ace-4145-9a95-c9e030eeb313",
+  "r2_key": "a/v1/b39350f6-4ace-4145-9a95-c9e030eeb313/bf114dd3-4dd0-4e6e-8805-daa1c9ae62d2/budova.jpg",
+  "size": 425907,
+  "url": "/__l5e/assets-v1/bf114dd3-4dd0-4e6e-8805-daa1c9ae62d2/budova.jpg",
+  "version": 1
 }

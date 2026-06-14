@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "a92968b1-f233-4df3-a2ee-3e08469373a5",
-  "project_id": "45a31d77-f433-454c-9c87-3aa8ac6ad8fb",
-  "url": "/__l5e/assets-v1/a92968b1-f233-4df3-a2ee-3e08469373a5/okruh-logo.png",
-  "r2_key": "a/v1/45a31d77-f433-454c-9c87-3aa8ac6ad8fb/a92968b1-f233-4df3-a2ee-3e08469373a5/okruh-logo.png",
-  "original_filename": "okruh-logo.png",
-  "size": 105622,
   "content_type": "image/png",
-  "created_at": "2026-06-12T19:34:13Z"
+  "created_at": "2026-06-12T19:34:13Z",
+  "original_filename": "okruh-logo.png",
+  "project_id": "b39350f6-4ace-4145-9a95-c9e030eeb313",
+  "r2_key": "a/v1/b39350f6-4ace-4145-9a95-c9e030eeb313/a92968b1-f233-4df3-a2ee-3e08469373a5/okruh-logo.png",
+  "size": 105622,
+  "url": "/__l5e/assets-v1/a92968b1-f233-4df3-a2ee-3e08469373a5/okruh-logo.png",
+  "version": 1
 }
