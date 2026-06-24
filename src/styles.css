@@ -38,15 +38,6 @@
   --color-clay: var(--clay);
 }
 
-@layer base {
-  @font-face {
-    font-family: "Cormorant Garamond";
-    font-style: normal;
-    font-weight: 300 700;
-    font-display: swap;
-    src: url("https://fonts.gstatic.com/s/cormorantgaramond/v16/co3bmX5slCNuHLi8bLeY9MK7whWMhyjornFLsS6V7w.woff2") format("woff2");
-  }
-}
 
 :root {
   --radius: 0.5rem;
