@@ -341,7 +341,7 @@ function Home() {
                 <MapPin className="w-5 h-5 mt-1 shrink-0" />
                 <div>
                   <div className="font-medium text-primary-foreground">Adresa</div>
-                  <div className="text-primary-foreground/80">Náměstí Okruh 12, 100 00 Praha</div>
+                  <div className="text-primary-foreground/80">Mlýnská 18, Blansko</div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
