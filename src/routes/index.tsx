@@ -2,23 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Star, Coffee, Cake, Wine, GlassWater } from "lucide-react";
 
 import hero from "@/assets/hero.jpg";
-import aboutAsset from "@/assets/bistro-zahradka.jpg.asset.json";
-const about = aboutAsset.url;
+import about from "@/assets/bistro-zahradka.jpg";
 import menuSavory from "@/assets/menu-savory.jpg";
 import menuSweet from "@/assets/menu-sweet.jpg";
 import menuDrinks from "@/assets/menu-drinks.jpg";
 import menuWine from "@/assets/menu-wine.jpg";
-import gallery1Asset from "@/assets/vege-talir.jpg.asset.json";
-import gallery2Asset from "@/assets/toast.jpg.asset.json";
-import gallery3Asset from "@/assets/budova.jpg.asset.json";
-import gallery4Asset from "@/assets/polevka.jpg.asset.json";
-const gallery1 = gallery1Asset.url;
-const gallery2 = gallery2Asset.url;
-const gallery3 = gallery3Asset.url;
-const gallery4 = gallery4Asset.url;
-import smallLogo from "@/assets/logo.png";
-import logoAsset from "@/assets/okruh-logo.png.asset.json";
-const logo = logoAsset.url;
+import gallery1 from "@/assets/vege-talir.jpg";
+import gallery2 from "@/assets/toast.jpg";
+import gallery3 from "@/assets/budova.jpg";
+import gallery4 from "@/assets/polevka.jpg";
+import logo from "@/assets/okruh-logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
