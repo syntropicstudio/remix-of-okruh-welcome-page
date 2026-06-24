@@ -1,0 +1,68 @@
+name: Deploy to GitHub Pages
+
+# Build the static site and publish it to GitHub Pages.
+# In the repo: Settings → Pages → Build and deployment → Source = "GitHub Actions".
+on:
+  # Run on every push to the default branch.
+  push:
+    branches: [main]
+  # Allow running it manually from the Actions tab.
+  workflow_dispatch:
+
+# Permissions required by the official Pages deployment actions.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment; don't cancel an in-progress run so a
+# deploy can finish publishing.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build static site
+        # PAGES_BASE makes Vite emit asset/links under /<repo-name>/, which is the
+        # URL a GitHub Pages "project site" is served from. Derived from the repo
+        # name so it keeps working if the repository is renamed.
+        env:
+          PAGES_BASE: /${{ github.event.repository.name }}/
+        run: bun run build
+
+      - name: Add SPA fallback and disable Jekyll
+        # 404.html lets client-side routing handle deep links / refreshes.
+        # .nojekyll stops GitHub from ignoring files that start with an underscore.
+        run: |
+          cp dist/client/index.html dist/client/404.html
+          touch dist/client/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/client
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

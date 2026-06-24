@@ -7,6 +7,9 @@ export const getRouter = () => {
 
   const router = createRouter({
     routeTree,
+    // Match the deployment base path (e.g. "/<repo>/" on GitHub Pages). Vite injects
+    // BASE_URL from the `base` config so links/navigation resolve under the subpath.
+    basepath: import.meta.env.BASE_URL,
     context: { queryClient },
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
